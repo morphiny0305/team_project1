@@ -1,0 +1,226 @@
+@charset "UTF-8";
+
+body {
+  background: black;
+}
+.hidden {
+  display: none;
+}
+.text-font {
+  font-family: "KOTRA_GOTHIC";
+}
+.small-title {font-family: 'SBAggroB';
+  font-size: 1.8rem;
+  font-weight: bold;
+  padding: 30px 0 10px;
+}
+.sub-bl {
+  background: black;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+}
+.sub-bg {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  transition: all 1.3s;
+  z-index: -1;
+}
+.sub-bg img {
+  width: 100%;
+}
+.contents_wrap {
+  width: 100%;
+  /* height: 2000px; */
+  padding: 0 0 20px;
+  display: flex;
+  z-index: -2;
+  background: transparent;
+  flex-wrap: wrap;
+}
+.contents_wrap * {
+  box-sizing: border-box;
+}
+
+.contents_info {
+  width: 90%;
+  height: 40%;
+  margin: 20% auto 1%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.contents_info .img-box {
+  width: 50%;
+  height: 20%;
+}
+.contents_info .img-box img {
+  width: 40%;
+}
+.text-box {
+  width: 50%;
+  color: #fff;
+  height: 45%;
+}
+ul.info-list {
+  display: flex;
+  padding: 10px 0;
+  font-size: 0.85rem;
+}
+ul.info-list li::after {
+  content: "|";
+  padding: 0 5px;
+}
+ul.info-list li:last-child:after {
+  content: "";
+}
+
+.btn-container{width: 25%; padding: 1px 0; display: flex; justify-content: space-around;}
+.btn-box {
+  /* width: 15%; */
+  height: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0;
+}
+a.btn {
+
+  display: block;
+  height: 35px;
+  padding: 0 15px;
+  line-height: 35px;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 0.8rem;
+}
+.ott-btn {
+  background: rgb(12, 86, 199);
+}
+.ott-btn:hover {
+  background: rgb(59, 112, 190);
+}
+.ott-btn:active {
+  background: rgb(0, 52, 131);
+}
+.trailer-btn {
+  background: #000; border: 1px solid #fff;
+}
+.trailer-btn:hover {
+  background: #444;
+}
+.trailer-btn:active {
+  background: #eee;
+  color: #000;
+}
+
+.info-box {
+  line-height: 1.5;
+}
+.info-box-1{padding: 5% 0 8px;} 
+
+.info-box-2 > span {
+  color: #888;
+  margin-right: 8px;
+}
+
+.contents-info2 {
+  height: 8%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.5;
+  text-align: center;
+  border-top: 2px solid #555;
+  border-bottom: 2px solid #555;
+  color: #fff;
+  font-size: 1.2rem;
+  padding: 3.3% 0; 
+}
+.contents-info2 > span{width: 100%;
+   height: 1%; font-weight: bold;  font-size: 1.5rem;
+}
+
+.content-box-size{
+  width: 90%; margin: auto;
+  color: #fff;
+}
+
+
+/* -------------영상--------------------- */
+.media {
+  display: flex; flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  /* background: palevioletred; */
+  padding: 5px 0;
+}
+.media h2{width: 100%;}
+
+.media-item{width: 24%; margin-right: 15px; }
+.media-item img{width: 100%;transition: all 0.3s;}
+.media-item img:hover{transform: scale(108%);}
+.media-item > p {padding: 10px 0;}
+
+
+.episode {
+  height: 17.6%;
+}
+.episode-item{padding: 0 10px;}
+.episode-item img{width: 95%;}
+
+.episode p{line-height: 1.4; padding: 5px 5px 5px 0; width: 95%;}
+.episode p:nth-child(2){font-size: 15px; font-weight: bold;}
+.episode p:nth-child(3){font-size: 14px; text-align: justify;}
+
+
+.details {
+  display: flex; flex-wrap: wrap;
+  /* padding: 0 0 10px; */
+  justify-content: space-between;
+}
+.details h2{width: 100%; }
+
+.detail-item{width: 18%; margin-top: 10px;}
+.detail-item img{width: 100%; transition: all 0.5s;}
+.detail-item img:hover{transform: scale(110%);}
+
+
+/* --------------------예고편 버튼----------------- */
+.video_modal_popup.reveal {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  justify-content: center;
+  align-items: center;
+  z-index: 200;
+}
+
+.video_modal_popup .video-wrapper {
+  position: relative;
+  width: 80%;
+  padding-bottom: 45%;
+  z-index: 10
+}
+
+.video_modal_popup .video-wrapper iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.video_modal_popup.reveal .video_modal_popup-closer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, .5);
+  z-index: 9
+}

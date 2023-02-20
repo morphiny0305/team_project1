@@ -1,0 +1,132 @@
+@charset "UTF-8";
+    /* Default slide */
+  .artist-slider .slick-slide{
+    color: #FFF;
+    height: 700px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: scale(0.7);
+    transition: all 0.5s ease-in-out;
+    opacity: 0.5;
+  }
+  .artist-slider .slick-slide,
+  .artist-slider .slick-slide[aria-hidden="true"]:not(.slick-cloned) ~ .slick-cloned[aria-hidden="true"] {
+    transform: scale(0.7, 0.7);
+    transition: all 0.5s ease-in-out;filter: grayscale(100);
+}
+
+    /* Active center slide (You can change anything here for cenetr slide)*/
+  .artist-slider .slick-center,
+  .artist-slider .slick-slide[aria-hidden="true"]:not([tabindex="-1"]) + .slick-cloned[aria-hidden="true"] {
+    transform: scale(1.1);
+    opacity: 1;
+    
+}
+  .artist-slider .slick-current.slick-active{
+    transform: scale(1.1);
+    position: relative;
+    z-index: 50;
+    filter: none;
+}
+
+    /* Arrows */
+.slick-prev,
+.slick-next
+{
+    font-size: 0;
+    line-height: 0;
+
+    position: absolute;
+    top: 5%;
+
+    display: block;
+
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+
+    cursor: pointer;
+
+    color: transparent;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+.slick-prev:hover,
+.slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus
+{
+    color: transparent;
+    outline: none;
+    background: transparent;
+}
+.slick-prev:hover:before,
+.slick-prev:focus:before,
+.slick-next:hover:before,
+.slick-next:focus:before
+{
+    opacity: 1;
+}
+.slick-prev.slick-disabled:before,
+.slick-next.slick-disabled:before
+{
+    opacity: .25;
+}
+
+.slick-prev:before,
+.slick-next:before
+{
+    font-family: 'slick';
+    font-size: 20px;
+    line-height: 1;
+
+    opacity: 0.5;
+    color: #fff;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-prev
+{
+    left: 868px;z-index: 10;
+}
+[dir='rtl'] .slick-prev
+{
+    right: 0px;
+    left: auto;
+}
+.slick-prev:before
+{
+    content: 'PREV';
+}
+[dir='rtl'] .slick-prev:before
+{
+    content: 'PREV';
+}
+
+.slick-next
+{
+    right: 900px;z-index: 10;
+}
+[dir='rtl'] .slick-next
+{
+    right: auto;
+    left: 25px;
+}
+.slick-next:before
+{
+    content: 'NEXT';
+}
+[dir='rtl'] .slick-next:before
+{
+    content: 'NEXT';
+}
+
+

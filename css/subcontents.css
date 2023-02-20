@@ -1,0 +1,148 @@
+@charset "UTF-8";
+
+body{background-color: #000;color: #fff;  }
+#wrap{ width: 100%; height: 1700px; position: relative; }
+hr{opacity: 0.5;}
+img{display: block;}
+a{text-decoration: none; display: block; color: #fff; line-height: 2.7;}
+
+/* 이미지 픽스 */
+.fix{position: fixed; width: 100%; height: 600px; z-index: -1; transition: 4s;}
+
+/* logo */
+.logo{position: absolute; top: 250px; left: 100px; font-size: larger; width: 500px; height: 200px; }
+.logo a img{width: 400px; height: 100px;}
+
+
+/* Kategorie */
+.Kategorie{position: absolute; top: 400px; left: 100px;}
+.Kategorie ul{display: flex;}
+.Kategorie ul li::after{content: "|"; padding: 0 10px;}
+.Kategorie ul li:last-child::after{content:"";}
+
+/* button */
+.button-all{display: flex; position: absolute; top: 500px; left: 100px;}
+.button1 a{border: 1px solid rgb(12, 86, 199); width: 100px; height: 40px; background-color: rgb(12, 86, 199); color: #fff; text-align: center; line-height: 35px; border-radius: 5px; font-size: 13px; margin: 0 20px;}
+.button2 div{border: 1px solid #fff; width: 70px; height: 40px; background-color: #000; color: #fff; text-align: center; line-height: 35px; border-radius: 5px; font-size: 13px;}
+.button2:hover div{opacity: 0.5; cursor: pointer;}
+.button1:hover a{opacity: 0.5; cursor: pointer;}
+
+/* story */
+.story{ margin: 50px 0; width: 700px; position: absolute; top: 560px; left: 100px;}
+
+
+/* detail */
+.detail{margin-top: 100px; position: absolute; top: 650px; left: 100px; width: 100%;}
+.detail .d-2{margin-bottom: 30px;}
+
+.block3{display: flex; margin: 100px 0; position: absolute; top: 800px; left: 100px;}
+
+.left{width: 800px;}
+.center{width: 400px;}
+.right{width: 400px;}
+
+
+/* behind */
+.behind{display: flex; justify-content: space-around; width: 100%; position: absolute; top: 1200px;}
+.behind img{width: 18%; }
+.behind img:hover{transform:scale(1.5);}
+
+
+
+
+/* Button */
+
+
+  
+  
+  /* youtube madal */
+  main {
+    padding: 10%;
+    text-align: center;
+  }
+  /* --- Video Modal --- */
+  .noscroll {
+      overflow: hidden;
+  }
+  .video-modal,
+  .video-modal .overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  .video-modal {
+    z-index: 3000;
+    overflow: hidden;
+    position: fixed;
+    opacity: 0;
+    -webkit-transform: translate(500%, 0);
+            transform: translate(500%, 0);
+    -webkit-transition: -webkit-transform 0s linear 0s;
+                    transition: transform 0s linear 0s;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+       -moz-box-align: center;
+       -ms-flex-align: center;
+    -webkit-align-items: center;
+            align-items: center;
+    -webkit-transform-style: preserve-3d;
+       -moz-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+  }
+  .video-modal .overlay {
+    z-index: 0;
+    background-color: rgba(33,36,46,.9);
+    opacity: 0;
+    -webkit-transition: opacity 0.2s ease;
+            transition: opacity 0.2s ease;
+  }
+  .video-modal-content {
+    position: relative;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: auto; 
+    width: calc(100% - 12em);
+    height: 0;
+    padding-top: calc((100% - 12em) * 0.5625);
+    margin: 0 auto;
+    overflow-y: visible;
+    background-color: #000;
+    z-index: 1;
+  }
+  
+  
+  
+  
+  
+  
+  
+  /* iframe element stretch to fit */
+  iframe#youtube {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: 1;
+      background-color: #111;
+      box-shadow: 0 2px 16px rgba(0,0,0,0.5);
+  }
+  
+  /* show modal */
+  .show-video-modal .video-modal {
+      opacity: 1;
+      -webkit-transform: translate(0,0);
+            transform: translate(0,0);
+  }
+  .show-video-modal .video-modal .overlay {
+      opacity: 1;
+  }
+  .show-video-modal .video-modal-content {
+      -webkit-transform: translate(0,0);
+            transform: translate(0,0);
+  }

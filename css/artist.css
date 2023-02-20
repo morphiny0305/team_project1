@@ -1,0 +1,286 @@
+@charset "utf-8";
+/* 내용물 */
+body{background: #000;color: #fff;}
+.section--wrap{padding-top: 100px;} /* 메뉴에 안가려지기 위해서 만든거 */
+
+/*---------------------------------------header_section */
+/* header_fixed-bar 사라졌다 나타나는 효과 */
+.fixed-bar{background-color: transparent;}
+#menu.active {
+  background: #000;
+	transition: all 0.5s;
+}
+
+.header_main_slide{width: 100%;height: 50vw;}
+
+/*---------------------------------------header_main_slide */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  margin: auto;
+  
+}
+.slideshow-container .mySlides img {
+  height: 49vw;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 50px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  opacity: 0.5;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add color with a little bit see-through */
+.prev:hover, .next:hover {
+  color: #fff;
+  opacity: 1;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Fading animation */
+.fade{
+  animation-name: fade;
+  animation-duration: 2s;
+}
+@keyframes fade{
+	from {
+    opacity: 0.6;
+	}
+	to {
+			opacity:1;
+	}
+}
+/*---------------------------------------header_main_slide end*/
+
+/*---------------------------------------middle_section */
+/* middle_titel */
+.artist-middle_titel .middle_titel{font-family: SBAggroB;color: #000; font-size: 80px;text-align: center;padding-top: 150px;text-shadow: -0.5px 2px #ccc, 2px 0.5px #ccc, 0.5px 2px #ccc, 2px -0.5px #ccc;}
+
+/* middle_slick_slide */
+.custom-slider{width: 100%;height: 1000px;margin-top: -20px;}
+.custom-slider .artist-slider div a img{width: 345px;height: 500px;box-shadow: 1px 1px 25px rgb(94, 94, 94)}
+
+/* middle_text */
+.artist-middle_titel .artlst-text-box{font-family: 'KOTRA_GOTHIC';font-size: 25px;text-align: center;line-height: 1.8;margin-top: -130px;}
+
+/* middle_ACTOR_titel */
+.sec1-titel{font-family: 'SBAggroB'; text-align: center;font-size: 80px;padding-top: 200px;padding-bottom: 50px;}
+.sec1-titel::after{
+    content: "";
+  display: block;
+  width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom: 15px solid #fff;
+}
+
+/* middle_ACTOR_img_box */
+.img-sec1{box-sizing: border-box; width: 1500px;margin: auto;}
+.img-sec1 .img-box1{width: 1500px;display: flex;flex-wrap: wrap;}
+.img-sec1 .img-box1 figure{width: 1500px;margin: auto;}    
+.img-sec1 .img-box1 figure img{width: 1000vw;height: 450px;margin: auto;padding-bottom: 20px;}
+
+/* middle_MUSICIANS_titel */
+.sec2-titel{font-family: 'SBAggroB'; text-align: center; font-size: 80px;padding-top: 220px;padding-bottom: 50px;}
+.sec2-titel::after{
+    content: "";
+  display: block;
+  width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom: 15px solid #fff;
+  
+}
+
+/* middle_MUSICIANS_img_box */
+.img-sec2{box-sizing: border-box; width: 1500px;margin: auto;}
+.img-sec2 .img-box2{padding-bottom: 250px; width: 1500px;display: flex;flex-wrap: wrap;}
+.img-sec2 .img-box2 figure {width: 1500px;margin: auto;}    
+.img-sec2 .img-box2 figure img{width: 1000vw;height: 450px;margin: auto;padding-bottom: 20px;}
+
+/* middle_section_img_hover */
+figure.snip1196 {
+  font-family: 'KOTRA_GOTHIC';
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  min-width: 220px;
+  max-width: 310px;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+}
+figure.snip1196 * {
+  -webkit-box-sizing: padding-box;
+  box-sizing: padding-box;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+figure.snip1196 img {
+  max-width: 100%;
+  vertical-align: top;
+}
+figure.snip1196 figcaption {
+  top: 50%;
+  left: 20px;
+  right: 20px;
+  position: absolute;
+  opacity: 0;
+  z-index: 1;
+}
+figure.snip1196 h2,
+figure.snip1196 h1{
+  margin: auto;
+}
+figure.snip1196 h1 {
+  font-weight: bold;
+  font-size: 25px;
+}
+figure.snip1196 h2 {
+  font-weight: 1500;
+  font-size: 80px;
+  
+}
+figure.snip1196 h3{
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 40px
+}
+figure.snip1196 i {
+  font-size: 32px;
+}
+figure.snip1196:after {
+  background-color: #000;
+  position: absolute;
+  content: "";
+  display: block;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  -webkit-transform: scale(0.5);
+  transform: scale(0.5);
+  opacity: 0;  
+}
+figure.snip1196 a img {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  z-index: 1;
+}
+figure.snip1196:hover figcaption,
+figure.snip1196.hover figcaption {
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  opacity: 1;
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+figure.snip1196:hover:after,
+figure.snip1196.hover:after {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  opacity: 0.5;
+}
+figure.snip1196 a{text-decoration: none;color: #fff;}
+
+/* middle_section_animation */
+/* 안보이다 스크롤 내리면 나타나는 효과 */
+.middle_titel{
+	animation: fadein1 1s;
+}
+@keyframes fadein1 {
+	from {
+			opacity:0;
+	}
+	to {
+			opacity:1;
+	}
+}
+
+.custom-slider{
+	animation: fadein2 1s;
+}
+@keyframes fadein2 {
+	from {
+			opacity:0;
+	}
+	to {
+			opacity:1;
+	}
+}
+
+/* 시작은 안보이게 */
+.back-to-position{opacity: 0;transition: 0.8s;} */
+
+/* 왼 -> 오 */
+.back-to-position.to-right{transform: translateX(-150px);transition: 0.8s;}
+
+/* 아래 -> 위 */
+.back-to-position.to-up{transform: translateY(100px);transition: 0.8s;}
+
+
+.show .back-to-position{opacity: 1;transform: translateX(0);}
+.show .back-to-position.delay-1{transition-delay: 0.5s;}
+.show .back-to-position.delay-2{transition-delay: 0.6s;}
+.show .back-to-position.delay-3{transition-delay: 0.1s;}
+.show .back-to-position.delay-4{transition-delay: 0.4s;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

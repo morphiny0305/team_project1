@@ -1,0 +1,55 @@
+@charset "utf-8";
+/* 내용물 */
+body{background: #000;color: #fff;}
+.section--wrap{padding-top: 100px;} /* 메뉴에 안가려지기 위해서 만든거 */
+
+/* fixed-bar 사라졌다 나타나는 효과 */
+.fixed-bar{background-color: transparent;}
+#menu.active {
+  background: #000;
+	transition: all 0.5s;
+}
+
+/*---------------------------------------header_section */
+/* header_main_img & titel  */
+.artist-head .artist-head-title{font-family: SBAggroB;font-size: 80px;text-align: center;padding-top: 570px;text-shadow: 7px 7px 20px #000;}
+.artist-head .artist-head-title h1{padding-top: 20px;}
+.artist-head{
+  background: url(../images/artist/artist_sub/artist_sub_background.jpg) no-repeat center fixed;
+  background-size: cover;
+  padding-top: 100px;
+  background-position: 0 -10px;
+  width: 100%;
+  height: 860px;
+  position: relative;
+  }
+
+  /*---------------------------------------middle_section */
+  .artist-sec1{color: #fff;text-align: center;font-family: 'KOTRA_GOTHIC';}
+  .artist-sec1 h2{font-size: 80px;padding-top: 100px;}
+  .artist-sec1 h3{font-size: 30px;padding-top: 40px;}
+  .artist-sec1 p{font-size: 20px;padding-top: 60px;}
+
+  .artist-sec2{box-sizing: border-box; width: 100%;}
+  .artist-sec2 .img-box div{display: flex;width: 100%;margin-top: 50px;}
+  .artist-sec2 .img-box div img{width: 50vw;height: 1200px;}
+  
+
+  .artist-sec3{color: #fff;text-align: center;font-family: 'KOTRA_GOTHIC';}
+  .artist-sec3 h1{font-size: 80px;padding-top: 100px;}
+  .artist-sec3 h2{font-size: 30px;}
+  .text-box1{padding-top: 60px;}
+  .text-box2{padding-top: 75px;}
+  .text-box3{padding-top: 60px;}
+  .text-box4{padding-top: 60px;}
+  .text-box5{padding-top: 75px;padding-bottom: 250PX;}
+  .inner::after{
+    content: "";
+    display: block;
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 10px solid #fff;
+    padding: 5px;
+  }
+  .artist-sec3 p{padding-top: 20px;font-size: 20px;}

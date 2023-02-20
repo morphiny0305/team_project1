@@ -1,0 +1,128 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'SBAggroB';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'KOTRA_GOTHIC';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/KOTRA_GOTHIC.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 뱃지 */
+
+.badges {
+	position: fixed;
+	top: 450px;
+	right: 10px;
+	z-index: 50;
+	cursor: pointer;
+}
+.badges div {margin: 10px;}
+
+
+
+html, body, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, a, img {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a{text-decoration: none; color: black;}
+
+
+/* 헤더 + 푸터 --------------------------------------------------- */
+header a{text-decoration: none; color: #464646;}
+/* 헤더 위치 */
+header{width: 100%; position: relative;}
+/* 메뉴 배경 */
+.fixed-bar{width: 100%; height: 90px; background: #fff; position: fixed; z-index: 50;}
+
+/* 로고와 메뉴 */
+.header__inner{width: 1200px; margin: auto; display: flex; justify-content: space-between;}
+.header__inner h1{padding-top:12px; padding-left: 15px; width: 170px;}
+.header__inner h1 img{width: 100%;}
+
+.header__inner ul.menu{display: flex; padding-right: 10px;}
+.header__inner ul.menu li{padding: 50px 0 0 20px; font-size: 17px; font-weight: bold;}
+.header__inner ul.menu li a{padding: 3px; transition: all 0.3s;font-family: 'SBAggroB';  position: relative; }
+ul.menu li a::before{
+  content: "";
+  width: 100%;
+  height: 4px;
+  transition: 0.5s transform ease;
+  transform: scale3d(0,1,1);
+	background: #870000;
+  transform-origin: 100% 50%;
+	position: absolute;
+  left: 0;
+  bottom: -2px;
+}
+ul.menu li a:hover::before{
+  transform: scale3d(1,1,1);
+}
+ul.menu li a:hover::before{
+  transform-origin: 0 50%;
+}
+ul.menu li a:hover{
+	color: #870000;
+}
+
+/* 푸터 */
+footer{background: #464646; display: flex; justify-content: center; width: 
+	100%; height: 100px; box-sizing: border-box;font-family: 'KOTRA_GOTHIC';color: #999; box-sizing: border-box;}
+	footer p{font-size: 13px;box-sizing: border-box;}
+	footer a{box-sizing: border-box;}
+	.footer-left{width: 400px; height: 100px;}
+	.footer-left p{width: 100%; height: 100%;padding: 25px 10px 0;  line-height: 1.3;}
+	
+	.footer-center{width: 450px; height: 100%; display: flex; flex-wrap: wrap; align-items: center; justify-content: center;}
+	.footer-center a{width: 100%; height: 80px;display: flex; justify-content: center;padding-top: 20px;}
+	.footer-center a img{width: 114px; height: 44px;}
+	.footer-center p{width: 100%; height: 20px; text-align: center; line-height: 20px;}
+	
+	.footer-right{width: 350px; height: 100px; display: flex; align-items: center; justify-content: center; }
+	.footer-right p{font-weight: 600; padding-right: 10px;}
+	.footer-right a{margin: 0 5px;}
+	.footer-right a img{opacity: 0.7;}

@@ -1,0 +1,68 @@
+@charset "utf-8";
+/* 내용물 */
+.section--wrap{padding-top: 100px;margin: auto; width: 1200px; height: 24500px;color: #464646;font-family: 'KOTRA_GOTHIC';} /* 메뉴에 안가려지기 위해서 만든거 */
+
+/* 구매섹션-------------------------------------------------------- */
+.main{position: relative; margin-top: 50px; height: 800px;}
+.main .product{float: left; margin-right: 50px;}
+.main .product >img{width: 600px; height: 600px;}
+.main .info{ width: 450px; height: 400px;  margin: 0;position: absolute;top: 0; left: 700px;}
+.product_title{font-size: 30px; margin: 20px 0 20px 0; }
+.product_title >P{font-size: 15px; margin-bottom: 5px;}
+.product_price{font-size: 25px; font-weight: bold;}
+.product_quantity{margin-top: 50px; border:1px  solid; border-color: #464646 transparent; background-color: rgba(230, 223, 223, 0.589);height: 100px; position: relative;}
+.product_quantity .product_name{margin-top: 20px;margin-left: 20px;}
+.count{width: 300px;height: 50px;margin-top: 10px; margin-left: 20px;}
+.count >a,span{float: left;}
+.count .plus{margin-left: 20px;}
+.count >#result{margin-left: 20px;margin-top: 2px;}
+.count >a{left: 50px;}
+.product_quantity .totalcost{position: absolute; top: 40px; left: 350px;}
+.product_total{float: right; margin-top: 40px;}
+.product_total .total{font-size: 20px;}
+.product_total .cost{font-size: 30px;}
+
+/* 구매버튼-------------------------------------------------------------- */
+.text-group{position: absolute;top: 400px;left: 700px;}
+
+.btn {
+width: 220px;
+  padding: 10px;
+  border: 2px solid #333;
+  border-radius: 100px;
+  color: #333;
+  font-weight: 800;
+  text-align: center;
+  cursor: pointer;
+  box-sizing: border-box;
+  display: block;
+  height: 70px;
+  transition: all 0.4s;
+}
+.btn:hover {
+  background: #333;
+  color: #fff;
+}
+.btn.btn--revers {
+  background: #333;
+  color: #fff;
+}
+.btn.btn--revers:hover {
+  background: transparent;
+  color: #333;
+}
+.btn.buy{width: 450px; margin-bottom: 20px;}
+.btn.bucket,.btn.list{float: left;margin: 0 5px;}
+
+/* 구매상세------------------------------------------------------------------------- */
+.detail {padding: auto;}
+.notice{border: rgba(230, 223, 223, 0.589) 5px solid;width: 860px;height: 120px; margin-top: 100px; padding: 15px 20px;margin: 100px 140px;
+ line-height: 35px;}
+.detail .notice>ul{list-style: circle; margin-left: 20px;}
+.detail .notice>ul>li:nth-child(2){line-height: 20px;}
+.detail .notice > p{font-weight: 700;}
+.detail_image{margin-top: 100px;margin-left: 145px;}
+.detail_image>h1{font-size: 20px;font-weight: bold;margin-bottom: 20px;}
+.inner>img{width: 900px;}
+
+

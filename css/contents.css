@@ -1,0 +1,271 @@
+@charset "UTF-8";
+
+/* Contents */
+.contents-head {
+  width: 100%;
+  height: 1000px;
+  position: fixed;
+  background: url("../images/contents/headerimg.png") no-repeat center;
+  background-size: cover;
+  transition: all 1s;
+}
+
+.contents-head .contents-head-title {
+  position: relative;
+  width: 100%;
+  height: 80px;
+  top: 40%;
+  line-height: 80px;
+  color: #fff;
+  font-family: "SBAggroB";
+  top: 40%;
+  z-index: 2;
+  text-align: center;
+  font-size: 5rem;
+}
+.contents-head .contents-head-bg {
+  background: #000;
+  width: 66%;
+  height: 100%;
+  position: absolute;
+  top: -6px;
+  right: 0;
+  z-index: -1;
+}
+
+.contents-body {
+  width: 100%;
+  display: block;
+  background: #000;
+  padding-top: 1000px;
+}
+
+/* 컨텐츠 소제목 */
+.contents-body h2.box-name {
+  font-family: "SBAggroB";
+  /* background: rgba(000, 000, 000); */
+  margin-top: 5%;
+  padding: 15px 0;
+  width: 100%;
+  font-size: 5rem;
+  line-height: 70px;
+  position: absolute;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+}
+.name_line {
+  width: 50%;
+  height: 5px;
+  background: #fff;
+  border: none;
+  position: static;
+  margin-bottom: 3%;
+
+}
+
+/* 컨텐츠 이미지 */
+.contents-body .contents-box {
+  width: 100%;
+  height: auto;
+  display: inline-block;
+  margin-top: 10%;
+}
+.contents-body .contents-box ul {
+  width: 80%;
+  margin: 0 auto;
+}
+.contents-body .contents-box ul li {
+  width: 23.5%;
+  margin-right: 2%;
+  height: 0;
+  padding-bottom: 35%;
+  margin-bottom: 2%;
+  float: left;
+  position: relative;
+  overflow: hidden;
+}
+.contents-body .contents-box ul li div {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-size: cover !important;
+  transition: all 0.3s ease-in-out;
+}
+.contents-body .contents-box ul li:hover div {
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+}
+.contents-body .contents-box ul li:nth-child(4n) {
+  margin-right: 0;
+}
+
+.contents2{margin-bottom: 10%;}
+
+
+/* 유투브 영상------------------------------------ */
+.box-name3, .box-name4{position: absolute;}
+.youtube {
+  position: relative;
+  height: 700px;
+  background: #333;
+  overflow: hidden;
+  margin: 10% 0 0;
+}
+
+/* 영상 맞춤 */
+.youtube .youtube__area {
+  width: 1920px;
+  position: absolute;
+  left: 50%;
+  margin-left: calc(1920px / -2);
+  top: 50%;
+  margin-top: calc(1920px * 9 / 16 / -2);
+}
+
+.youtube .youtube__area::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 0;
+  padding-top: 56.25%;
+}
+.youtube .youtube__area #player {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* coming soon */
+
+div.soon{
+  display: grid;
+  font-size: 50px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  padding: 2% 0 10%;
+}
+
+div.soon p{
+  grid-area: 1/1/-1/-1;
+}
+div.soon p:nth-of-type(1){
+  clip-path: polygon(0% 0%, 100% 0%, 100% 48%, 0% 58%);
+}
+
+div.soon p:nth-of-type(2){
+  clip-path: polygon(0% 60%, 100% 50%, 100% 100%, 0% 100%);
+  color: transparent;
+  background: -webkit-linear-gradient(177deg, black 40%, white 65%);
+  background: linear-gradient(177deg, black 40%, white 65%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  transform: translateX(-0.02em);
+}
+
+
+
+/* -----------you tube ------------------ */
+.contents-wrap{width: 100%; height:850px;position: relative;  display: flex; flex-wrap: wrap;}
+
+.box-name4 { font-family: "SBAggroB";
+  /* background: rgba(000, 000, 000); */
+  padding: 15px 0;
+  width: 100%;
+  height: 70px;
+  font-size: 65px;
+  line-height: 70px;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  position: absolute;
+  top: 0;
+}
+.name_line4{width: 50%;
+  height: 5px;
+  background: #fff;
+  border: none;
+  position: absolute;
+  top: 13%;
+  right: 0;
+  left: 0;
+  margin: 0 auto 3%;}
+
+  
+.contents-body .contents-box3 {
+  width: 100%;
+  height: 80%;
+  position: absolute;
+  top: 18%;
+}
+.contents-body .contents-box3 ul {
+  width: 90%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+}
+.contents-body .contents-box3 ul li {
+  width: 28%;
+  height: 100%;
+  
+  position: relative;
+  overflow: hidden;
+}
+.contents-body .contents-box3 ul li div {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-size: cover !important;
+  transition: all 0.3s ease-in-out;
+}
+.contents-body .contents-box3 ul li:hover div {
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+}
+
+
+
+
+
+
+/*post slider*/
+.post-slider {
+  width: 100%;
+  margin: 0px auto;
+  position: relative;
+}
+.post-slider .silder-title {
+  text-align: center;
+  margin: 30px auto;
+}
+
+.post-slider .post-wrapper {
+  width: 100%;
+  height: 600px;
+  margin: 0px auto;
+  overflow: hidden;
+  padding: 10px 0px 10px 0px;
+}
+.post-slider .post-wrapper .post {
+  width: 500px;
+  height: 600px;
+
+  display: inline-block;
+  background: #000;
+}
+
+.post-slider .post-wrapper .post .slider-image {
+  width: 100%;
+  height: 600px;
+}
